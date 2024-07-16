@@ -1,0 +1,38 @@
+en servicios -> distrohopping -> explicare en que distro empece con linux,luego a cual me pase y etc.
+
+distrohopping
+
+primero a kde neon,luego a ubuntu,se me rompio asi que volvi a kde  neon,me canse asi que me instale debian con driver privativos con gnome,luego me pase a Manjaro,
+despues me fui a Xubuntu por un corto periodo,luego volvi a debian con gnome instalandomelo con i3,me puse fedora y ahora estoy con debian con kde plasma.
+
+
+
+Noticias y Actualizaciones de Linux:
+
+Mantén a los usuarios informados sobre las últimas noticias y actualizaciones relacionadas con el mundo de Linux y las distribuciones.
+
+
+
+Personalización y Temas:
+
+Comparte consejos y trucos para personalizar el entorno de escritorio y la apariencia de diferentes distribuciones.
+
+
+
+
+Proyectos Open Source:
+
+Destaca proyectos de código abierto interesantes y útiles para que los usuarios participen o contribuyan.
+
+
+
+
+Eventos y Conferencias:
+
+Mantén a los usuarios al tanto de eventos y conferencias relacionadas con Linux, ya sea en línea o locales.
+
+
+
+Desktops
+
+explicar los entornos de escritorio en Linux

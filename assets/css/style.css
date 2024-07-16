@@ -1,0 +1,638 @@
+    @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Saira+Extra+Condensed:wght@600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana;
+    }
+
+    section.right {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    section {
+        line-height: 1.5;
+        margin: 1.25em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+section img{
+    margin: 0.75rem;
+}
+    div.circle {
+        background-color: #7a292b;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        color: #ffd700;
+        margin-top: 0.75em;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Saira Extra Condensed', sans-serif;
+    }
+
+    .mapa {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    main {
+
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-family: 'Saira Extra Condensed', sans-serif;
+    }
+
+    /* Header y menu hamburguesa responsivos */
+    header {
+        height: 3.1em;
+        background-color: #983B3E;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header label {
+        font-size: 1.8em;
+        cursor: pointer;
+        display: none;
+    }
+
+    #boton-menu {
+        display: none;
+    }
+
+    .menu ul {
+        background-color: #983B3E;
+        display: flex;
+        list-style: none;
+    }
+
+    .menu ul ul {
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.9em 1.25em;
+        color: gold;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .menu a span {
+        margin-left: 10px;
+    }
+
+    .menu ul li:hover ul {
+        display: block;
+        position: absolute;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="button"] {
+        background-color: #983B3E;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        background-color: #7a292b;
+    }
+
+    .form-container {
+        max-width: 25rem;
+        margin: 0 auto;
+        padding: 1.25rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    h2,
+    p {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Para movil */
+    @media screen and (max-width:767px) {
+        article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        aside {
+            order: 1;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+        }
+
+        div.circle {
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        div.circle img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .left-arrow,
+        .right-arrow {
+            display: none;
+        }
+
+        table th,
+        table td {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        section img {
+            width: 7.5em;
+        }
+
+        table th,
+        table td {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: transparent;
+        }
+
+        header label {
+            display: block;
+        }
+
+        .menu {
+            position: absolute;
+            top: 3.1em;
+            left: 0;
+            width: 100%;
+            transform: translateX(-100%);
+            transition: all 0.3s;
+        }
+
+        .menu ul {
+            display: block;
+            background-color: #7a292b;
+        }
+
+        .menu ul li:hover ul {
+            display: none;
+            position: static;
+        }
+
+        .menu a span {
+            position: absolute;
+            right: 3%;
+        }
+
+        #boton-menu:checked~.menu {
+            transform: translateX(0%);
+        }
+
+        .menu ul ul {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .menu ul ul a {
+            padding: 0.9em 2.5em;
+        }
+
+        #carrusel .carrusel>div {
+            width: calc((100% - 2.5em) / 2);
+        }
+
+        section {
+            font-size: 0.8em;
+        }
+
+        .carrusel {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .carrusel>div {
+            flex: 0 0 45%;
+            margin: 0.5rem;
+        }
+
+        .left-arrow img,
+        .right-arrow img {
+            max-width: 10px;
+            height: auto;
+        }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 768px) and (max-width:1023px) {
+        article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+        }
+
+        div.circle {
+            width: 3em;
+            height: 3em;
+        }
+
+        .left-arrow,
+        .right-arrow {
+            display: none;
+        }
+
+        table th,
+        table td {
+            display: block;
+            width: 100%;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        section img {
+            width: 120px;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: transparent;
+        }
+
+        header label {
+            display: block;
+        }
+
+        .menu {
+            position: absolute;
+            top: 3.1em;
+            left: 0;
+            width: 100%;
+            transform: translateX(-100%);
+            transition: all 0.3s;
+        }
+
+        .menu ul {
+            display: block;
+            background-color: #7a292b;
+        }
+
+        .menu ul li:hover ul {
+            display: none;
+            position: static;
+        }
+
+        .menu a span {
+            position: absolute;
+            right: 3%;
+        }
+
+        #boton-menu:checked~.menu {
+            transform: translateX(0%);
+        }
+
+        .menu ul ul {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .menu ul ul a {
+            padding: 0.9em 2.5em;
+        }
+
+        #carrusel .carrusel>div {
+            width: calc((100% - 2.5em) / 4);
+        }
+
+        section {
+            font-size: 0.8em;
+        }
+
+        .carrusel {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .carrusel>div {
+            flex: 0 0 45%;
+            margin: 0.5rem;
+        }
+
+        .left-arrow img,
+        .right-arrow img {
+            max-width: 10px;
+            height: auto;
+        }
+
+    }
+
+    /* Escritorio */
+    @media screen and (min-width:1200px) {
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 1rem 0;
+            font-size: 1em;
+        }
+
+        div.circle {
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        .container {
+            max-width: 75em;
+            margin: 0 auto;
+            padding: 0 1.25em;
+        }
+
+        .main-content {
+            float: left;
+            width: 70%;
+            margin-right: 1.8em;
+        }
+
+        .sidebar {
+            float: left;
+            width: 30%;
+        }
+
+        .featured-article {
+            background-color: #f9f9f9;
+            padding: 1.25em;
+            margin-bottom: 1.8em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1.25px;
+            text-align: center;
+            clear: both;
+        }
+    }
+
+    section>h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        font-family: 'Saira Extra Condensed', sans-serif;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 50em;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    article img.miniatura {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1em
+    }
+
+
+    article p.parrafoBlog::first-letter {
+        color: #752127;
+        font-size: 5em;
+    }
+
+    p.parrafoServicio::first-letter {
+        color: #752127;
+        font-size: 5em;
+    }
+
+    iframe {
+        height: 22em;
+        width: 40em;
+        display: flex;
+        justify-items: center;
+    }
+
+    footer {
+        background-color: #752127;
+        color: gold;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+    }
+
+    footer>img {
+        color: white;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    footer a:hover {
+        color: gold;
+    }
+
+    aside {
+        padding-bottom: 2em;
+        background-color: #752127;
+        color: gold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 7em;
+    }
+
+    aside a {
+        color: gold;
+    }
+
+
+    #carrusel {
+        overflow-x: auto;
+        position: relative;
+    }
+
+
+    #carrusel .left-arrow,
+    #carrusel .right-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        margin-top: -9px;
+    }
+
+    #carrusel .left-arrow {
+        left: 0;
+    }
+
+    #carrusel .right-arrow {
+        right: 0;
+    }
+
+    .carrusel {
+        width: 100%;
+        left: 0;
+        position: relative;
+        z-index: 0;
+        display: flex;
+
+    }
+
+    .carrusel>div {
+        flex: 0 0 auto;
+        height: auto;
+        margin-right: 10px;
+        width: 30%;
+        max-width: 13.75rem;
+        text-align: center;
+    }
+
+    .carrusel img {
+        cursor: pointer;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .product {
+        border: #CCCCCC 1px solid;
+    }
+
+    #product_0 {
+        margin-left: 10px;
+    }
+
+    p.bienvenida {
+        text-align: justify;
+    }
+
+    p.bienvenida::first-line {
+        font-weight: bold;
+    }
+
+    p.bienvenida::first-letter {
+        color: #752127;
+        font-size: 5em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    input,
+    textarea {
+        margin: 0.2em;
+    }
+
+    /* Tabla responsiva */
+    table {
+        border-collapse: collapse;
+        width: calc(100% - 4rem);
+        margin: 20px 2rem;
+    }
+
+    table caption {
+        caption-side: bottom;
+        color: gold;
+        background-color: #752127;
+        border-bottom: white solid 0.15em;
+        border-left: white solid 0.15em;
+        border-right: white solid 0.15em;
+        font-weight: bold;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    table tbody tr:hover {
+        background-color: #C17F7F;
+    }
+
+    i {
+        margin-top: 1em;
+        margin-left: 0.2em;
+        z-index: 2;
+    }
+
+    footer>i:hover {
+        color: gold;
+    }
