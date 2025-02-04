@@ -12,8 +12,7 @@ Mundo Linux is a simple website dedicated to providing content about Linux, incl
 ## Screenshots
 
 Here are some screenshots of the platform:<br>
-![imagen](https://github.com/user-attachments/assets/93cfe5e8-1e61-4896-bf16-30084e711e5a)
-![imagen](https://github.com/user-attachments/assets/4dee518c-4f3b-4ec7-a5ab-4f1b8fe7ed22)
+
 
   
 ## Current Status
